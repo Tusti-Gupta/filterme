@@ -19,7 +19,28 @@
         <br>
         <h1 style="font-size: 90px; color: whitesmoke; font-family: cursive;"> Filter Me </h1>
         <br>
-        <button onclick="snap();" style="border-radius: 100%; font-size: 30px;" class>&nbsp;<i class="fa fa-camera"></i>&nbsp;</button>
+        <button data-toggle="modal" data-target="#myModal" onclick="snap();" style="border-radius: 100%; font-size: 30px;" class>&nbsp;<i class="fa fa-camera"></i>&nbsp;</button>
+        <br><br>
+        
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <center>
+                    <br><br>
+                    <img id="canvasImg" height="350" width="350">
+                    <br><br>
+                    <button style="width:60%;" class="btn btn-success"><a id="downloadLink" download="img.jpg"> Download <i class="glyphicon glyphicon-ok"></i></a></button> 
+                    <br><br> 
+                    <button style="width:60%;" class="btn btn-danger" data-dismiss="modal" > Retake <i class="glyphicon glyphicon-remove"></i></button>        
+                    <br><br>
+                    </center>
+                </div>
+              </div>
+            </div>
+        </div>
+
         </center>
     </body>
 </html>
